@@ -7,33 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Bootstrap Css-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}" />
     <!--Mean menu.css-->
-    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.css')}}" />
     <!--Owl carousel-->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}" />
     <!--Owl Theme-->
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css')}}" />
     <!--=== Magnific Popup Min CSS ===-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.min.css')}}" />
     <!--Flat icon-->
-    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css')}}" />
     <!--Remix icon-->
-    <link rel="stylesheet" href="assets/css/remixicon.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/remixicon.css')}}" />
     <!--Odometer-->
-    <link rel="stylesheet" href="assets/css/odometer.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/odometer.min.css')}}" />
     <!--Aos css-->
-    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css')}}" />
     <!--Style css-->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" />
     <!--Dark css-->
-    <link rel="stylesheet" href="assets/css/dark.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dark.css')}}" />
     <!--Responsive css-->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}" />
 
     <!--=== Title ===-->
     <title>APLETI</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon-32x32.png')}}" />
 </head>
 
 <body>
@@ -56,16 +56,16 @@
                 <div class="mobile-responsive-menu">
                     <div class="logo">
                         <a href="index-2.html">
-                            <img class="main-logo" alt="logo" src="assets/images/apleti-removebg-logo.png"
+                            <img class="main-logo" alt="logo" src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}"
                                 style="width: 130px; height: auto;" />
                             <noscript>
-                                <img src="assets/images/apleti-removebg-logo.png" class="main-logo" alt="logo"
+                                <img src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}" class="main-logo" alt="logo"
                                     style="width: 130px; height: auto;" />
                             </noscript>
-                            <img class="white-logo" alt="logo" src="assets/images/apleti-removebg-logo.png"
+                            <img class="white-logo" alt="logo" src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}"
                                 style="width: 130px; height: auto;" />
                             <noscript>
-                                <img src="assets/images/apleti-removebg-logo.png" class="white-logo" alt="logo"
+                                <img src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}" class="white-logo" alt="logo"
                                     style="width: 130px; height: auto;" />
                             </noscript>
                         </a>
@@ -78,16 +78,16 @@
                 <nav class="navbar navbar-expand-md navbar-light"
                     style="height: 100px; line-height: 100px; margin-top: 0;">
                     <a class="navbar-brand" href="index-2.html">
-                        <img class="main-logo" alt="logo" src="assets/images/apleti-removebg-logo.png"
+                        <img class="main-logo" alt="logo" src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}"
                             style="width: 130px; height: auto;" />
                         <noscript>
-                            <img src="assets/images/apleti-removebg-logo.png" class="main-logo" alt="logo"
+                            <img src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}" class="main-logo" alt="logo"
                                 style="width: 130px; height: auto;" />
                         </noscript>
-                        <img class="white-logo" alt="logo" src="assets/images/apleti-removebg-logo.png"
+                        <img class="white-logo" alt="logo" src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}"
                             style="width: 130px; height: auto;" />
                         <noscript>
-                            <img src="assets/images/apleti-removebg-logo.png" class="white-logo" alt="logo"
+                            <img src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}" class="white-logo" alt="logo"
                                 style="width: 130px; height: auto;" />
                         </noscript>
                     </a>
@@ -175,127 +175,7 @@
             </div>
         </div>
     </div>
-    <!-- End Navbar Area -->
-
-    <!-- Sidebar Modal -->
-    <!-- <div class="sidebarModal modal right fade" id="sidebarModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-bs-dismiss="modal">
-                    <i class="ri-close-line"></i>
-                </button>
-
-                <div class="modal-body">
-                    <a href="index.html">
-                        <img class="main-logo" alt="logo" data-cfsrc="assets/images/logo.png"
-                            style="display: none; visibility: hidden" /><noscript><img src="assets/images/logo.png"
-                                class="main-logo" alt="logo" /></noscript>
-                        <img class="white-logo" alt="logo" data-cfsrc="assets/images/white-logo.png"
-                            style="display: none; visibility: hidden" /><noscript><img
-                                src="assets/images/white-logo.png" class="white-logo" alt="logo" /></noscript>
-                    </a>
-                    <div class="sidebar-content">
-                        <h3>About Us</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-
-                        <div class="sidebar-btn">
-                            <a href="contact.html" class="default-btn">Let’s Talk</a>
-                        </div>
-                    </div>
-                    <div class="sidebar-contact-info">
-                        <h3>Contact Information</h3>
-
-                        <ul class="info-list">
-                            <li>
-                                <i class="ri-phone-fill"></i>
-                                <a href="tel:9901234567">+990-123-4567</a>
-                            </li>
-
-                            <li>
-                                <i class="ri-mail-line"></i><a
-                                    href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#335b565f5f5c7340525d461d505c5e"><span
-                                        class="__cf_email__"
-                                        data-cfemail="c5ada0a9a9aa85b6a4abb0eba6aaa8">[email&#160;protected]</span></a>
-                            </li>
-
-                            <li>
-                                <i class="ri-map-pin-line"></i> 413 North Las Vegas, NV 89032
-                            </li>
-                        </ul>
-                    </div>
-                    <ul class="sidebar-social-list">
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="flaticon-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.twitter.com/" target="_blank"><i class="flaticon-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/?lang=en" target="_blank"><i
-                                    class="flaticon-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://instagram.com/?lang=en" target="_blank"><i
-                                    class="flaticon-instagram"></i></a>
-                        </li>
-                    </ul>
-                    <div class="contact-form">
-                        <h3>Ready to Get Started?</h3>
-
-                        <form id="contactForm">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="name" class="form-control" required
-                                            data-error="Please enter your name" placeholder="Your name" />
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-12 col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" name="email" class="form-control" required
-                                            data-error="Please enter your email" placeholder="Your email address" />
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" name="phone_number" class="form-control" required
-                                            data-error="Please enter your phone number"
-                                            placeholder="Your phone number" />
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control" cols="30" rows="6" required
-                                            data-error="Please enter your message"
-                                            placeholder="Write your message..."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-12 col-md-12">
-                                    <button type="submit" class="default-btn">
-                                        Send Message<span></span>
-                                    </button>
-                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- End Sidebar Modal -->
+    
 
     <!--Start Banner Area-->
     <div class="banner-area">
@@ -356,8 +236,8 @@
                 <div class="col-lg-6" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1300"
                     data-aos-once="true">
                     <div class="campus-image pl-20">
-                        <img data-cfsrc="assets/images/campus-information/campus-1.jpg"><img
-                            style="width: 90%; border-radius: 10px;" src="assets/images/campus-information/campus-1.jpg"
+                        <img data-cfsrc="{{ url_for('static', filename='images/campus-information/campus-1.jpg')}}"><img
+                            style="width: 90%; border-radius: 10px;" src="{{ url_for('static', filename='images/campus-information/campus-1.jpg')}}"
                             alt="Image"></noscript>
                     </div>
                 </div>
@@ -369,7 +249,7 @@
                 <div class="col-lg-6">
                     <div class="image-section" data-aos="fade-up" data-aos-easing="ease-in-sine"
                         data-aos-duration="1300" data-aos-once="true">
-                        <img src="assets/images/about-us.jpg" alt="Image" style="width: 90%; height: 480px;">
+                        <img src="{{ url_for('static', filename='images/about-us.jpg')}}" alt="Image" style="width: 90%; height: 480px;">
                     </div>
                 </div>
                 <!-- Content Section -->
@@ -475,8 +355,8 @@
                 </div>
             </div>
             <div class="shape">
-                <img alt="Image" data-cfsrc="assets/images/shape-1.png"
-                    style="display: none; visibility: hidden" /><noscript><img src="assets/images/shape-1.png"
+                <img alt="Image" data-cfsrc="{{ url_for('static', filename='images/shape-1.png')}}"
+                    style="display: none; visibility: hidden" /><noscript><img src="{{ url_for('static', filename='images/shape-1.png')}}"
                         alt="Image" /></noscript>
             </div>
         </div>
@@ -525,32 +405,32 @@
     <!-- End Go Top Area -->
 
     <!--=== Jquery Min js ===-->
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
+    <script data-cfasync="false" src="{{ url_for('static', filename='cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
     <!--=== Bootstrap bundle Min js ===-->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
     <!--=== MeanMenu js ===-->
-    <script src="assets/js/jquery.meanmenu.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery.meanmenu.js')}}"></script>
     <!--=== Owl Carousel Min js ===-->
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
     <!--=== Owl Carousel Thumbs Min js ===-->
-    <script src="assets/js/carousel-thumbs.min.js"></script>
+    <script src="{{ url_for('static', filename='js/carousel-thumbs.min.js')}}"></script>
     <!--=== Magnific popup Min js ===-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
     <!-- Aos js -->
-    <script src="assets/js/aos.js"></script>
+    <script src="{{ url_for('static', filename='js/aos.js')}}"></script>
     <!-- Odometer js -->
-    <script src="assets/js/odometer.min.js"></script>
+    <script src="{{ url_for('static', filename='js/odometer.min.js')}}"></script>
     <!-- Appear js -->
-    <script src="assets/js/appear.min.js"></script>
+    <script src="{{ url_for('static', filename='js/appear.min.js')}}"></script>
     <!-- Form Validator js -->
-    <script src="assets/js/form-validator.min.js"></script>
+    <script src="{{ url_for('static', filename='js/form-validator.min.js')}}"></script>
     <!-- Contact Form Script js -->
-    <script src="assets/js/contact-form-script.js"></script>
+    <script src="{{ url_for('static', filename='js/contact-form-script.js')}}"></script>
     <!--=== AjaxChimp js ===-->
-    <script src="assets/js/ajaxchimp.min.js"></script>
+    <script src="{{ url_for('static', filename='js/ajaxchimp.min.js')}}"></script>
     <!--=== Custom js ===-->
-    <script src="assets/js/custom.js"></script>
+    <script src="{{ url_for('static', filename='js/custom.js')}}"></script>
 </body>
 
 </html>
