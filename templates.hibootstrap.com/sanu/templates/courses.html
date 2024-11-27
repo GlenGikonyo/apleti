@@ -6,33 +6,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--Bootstrap Css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
         <!--=== MeanMenu CSS ===-->
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.css')}}">
         <!--Owl carousel-->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
         <!--Owl Theme-->
-        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css')}}">
         <!--=== Magnific Popup Min CSS ===-->
-        <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.min.css')}}">
         <!--Flaticon-->
-        <link rel="stylesheet" href="assets/css/flaticon.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css')}}">
         <!--Remixicon-->
-        <link rel="stylesheet" href="assets/css/remixicon.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/remixicon.css')}}">
         <!--Odometer-->
-        <link rel="stylesheet" href="assets/css/odometer.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/odometer.min.css')}}">
         <!--Aos css-->
-        <link rel="stylesheet" href="assets/css/aos.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css')}}">
         <!--Style css-->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
         <!--Dark css-->
-        <link rel="stylesheet" href="assets/css/dark.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/dark.css')}}">
         <!--Responsive css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
 
         <!--=== Title ===-->
-        <title>Sanu - College University HTML Template</title>
-        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <title>APLETI</title>
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png')}}">
     </head>
     <body>
         <!-- Start Preloader Area -->
@@ -51,11 +51,6 @@
         <div class="top-header-area">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="header-left-content">
-                            <p>Get the latest updates and Sanu's response to COVID-19</p>
-                        </div>
-                    </div>
                     <div class="col-lg-6 col-md-6">                                        
                         <div class="header-right-content">
                             <div class="list">
@@ -87,8 +82,8 @@ window.__mirage2 = {petok:"f39SqE2jkA23U9ZXbA8xTWPSbFiPoE3fMF98untLC_o-1800-0.0.
 //]]>
 </script>
 <script type="text/javascript" src="../../../ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
-<img class="main-logo" lt="logo" data-cfsrc="assets/images/logo.png" style="display:none;visibility:hidden;"><noscript><img src="assets/images/logo.png" class="main-logo" lt="logo"></noscript>
-                                <img class="white-logo" alt="logo" data-cfsrc="assets/images/white-logo.png" style="display:none;visibility:hidden;"><noscript><img src="assets/images/white-logo.png" class="white-logo" alt="logo"></noscript>
+<img class="main-logo" lt="logo" data-cfsrc="{{ url_for('static', filename='images/logo.png')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/logo.png')}}" class="main-logo" lt="logo"></noscript>
+                                <img class="white-logo" alt="logo" data-cfsrc="{{ url_for('static', filename='images/white-logo.png')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/white-logo.png')}}" class="white-logo" alt="logo"></noscript>
                             </a>
                         </div>
                     </div>
@@ -99,7 +94,7 @@ window.__mirage2 = {petok:"f39SqE2jkA23U9ZXbA8xTWPSbFiPoE3fMF98untLC_o-1800-0.0.
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="index.html">
-                            <img alt="logo" data-cfsrc="assets/images/white-logo.png" style="display:none;visibility:hidden;"><noscript><img src="assets/images/white-logo.png" alt="logo"></noscript>
+                            <img alt="logo" data-cfsrc="{{ url_for('static', filename='images/white-logo.png')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/white-logo.png')}}" alt="logo"></noscript>
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto">
@@ -298,8 +293,8 @@ window.__mirage2 = {petok:"f39SqE2jkA23U9ZXbA8xTWPSbFiPoE3fMF98untLC_o-1800-0.0.
 
                     <div class="modal-body">
                         <a href="index.html">
-                            <img class="main-logo" alt="logo" data-cfsrc="assets/images/logo.png" style="display:none;visibility:hidden;"><noscript><img src="assets/images/logo.png" class="main-logo" alt="logo"></noscript>
-                            <img class="white-logo" alt="logo" data-cfsrc="assets/images/white-logo.png" style="display:none;visibility:hidden;"><noscript><img src="assets/images/white-logo.png" class="white-logo" alt="logo"></noscript>
+                            <img class="main-logo" alt="logo" data-cfsrc="{{ url_for('static', filename='images/logo.png')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/logo.png')}}" class="main-logo" alt="logo"></noscript>
+                            <img class="white-logo" alt="logo" data-cfsrc="{{ url_for('static', filename='images/white-logo.png')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/white-logo.png')}}" class="white-logo" alt="logo"></noscript>
                         </a>
                         <div class="sidebar-content">
                             <h3>About Us</h3>
@@ -405,11 +400,11 @@ window.__mirage2 = {petok:"f39SqE2jkA23U9ZXbA8xTWPSbFiPoE3fMF98untLC_o-1800-0.0.
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single-courses-card style4">
                                         <div class="courses-img">
-                                            <a href="courses-details.html"><img alt="Image" data-cfsrc="assets/images/courses/courses-1.jpg" style="display:none;visibility:hidden;"><noscript><img src="assets/images/courses/courses-1.jpg" alt="Image"></noscript></a>
+                                            <a href="courses-details.html"><img alt="Image" data-cfsrc="{{ url_for('static', filename='images/courses/courses-1.jpg')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/courses/courses-1.jpg')}}" alt="Image"></noscript></a>
                                         </div>
                                         <div class="courses-content">
                                             <div class="admin-profile">
-                                                <img alt="Image" data-cfsrc="assets/images/courses/admin-1.jpg" style="display:none;visibility:hidden;"><noscript><img src="assets/images/courses/admin-1.jpg" alt="Image"></noscript>
+                                                <img alt="Image" data-cfsrc="{{ url_for('static', filename='images/courses/admin-1.jpg')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/courses/admin-1.jpg')}}" alt="Image"></noscript>
                                                 <p>With <a href="courses-details.html">Jessica Hamson</a></p>
                                             </div>
                                             <a href="courses-details.html"><h3>Python Programming For Data Science</h3></a>
@@ -430,11 +425,11 @@ window.__mirage2 = {petok:"f39SqE2jkA23U9ZXbA8xTWPSbFiPoE3fMF98untLC_o-1800-0.0.
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single-courses-card style4">
                                         <div class="courses-img">
-                                            <a href="courses-details.html"><img alt="Image" data-cfsrc="assets/images/courses/courses-2.jpg" style="display:none;visibility:hidden;"><noscript><img src="assets/images/courses/courses-2.jpg" alt="Image"></noscript></a>
+                                            <a href="courses-details.html"><img alt="Image" data-cfsrc="{{ url_for('static', filename='images/courses/courses-2.jpg')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/courses/courses-2.jpg')}}" alt="Image"></noscript></a>
                                         </div>
                                         <div class="courses-content">
                                             <div class="admin-profile">
-                                                <img alt="Image" data-cfsrc="assets/images/courses/admin-2.jpg" style="display:none;visibility:hidden;"><noscript><img src="assets/images/courses/admin-2.jpg" alt="Image"></noscript>
+                                                <img alt="Image" data-cfsrc="{{ url_for('static', filename='images/courses/admin-2.jpg')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/courses/admin-2.jpg')}}" alt="Image"></noscript>
                                                 <p>With <a href="courses-details.html">Christoph Baldwin</a></p>
                                             </div>
                                             <a href="courses-details.html"><h3>Databases: Advanced Topics In SQL And Athers</h3></a>
@@ -455,11 +450,11 @@ window.__mirage2 = {petok:"f39SqE2jkA23U9ZXbA8xTWPSbFiPoE3fMF98untLC_o-1800-0.0.
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single-courses-card style4">
                                         <div class="courses-img">
-                                            <a href="courses-details.html"><img alt="Image" data-cfsrc="assets/images/courses/courses-3.jpg" style="display:none;visibility:hidden;"><noscript><img src="assets/images/courses/courses-3.jpg" alt="Image"></noscript></a>
+                                            <a href="courses-details.html"><img alt="Image" data-cfsrc="{{ url_for('static', filename='images/courses/courses-3.jpg')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/courses/courses-3.jpg')}}" alt="Image"></noscript></a>
                                         </div>
                                         <div class="courses-content">
                                             <div class="admin-profile">
-                                                <img alt="Image" data-cfsrc="assets/images/courses/admin-3.jpg" style="display:none;visibility:hidden;"><noscript><img src="assets/images/courses/admin-3.jpg" alt="Image"></noscript>
+                                                <img alt="Image" data-cfsrc="{{ url_for('static', filename='images/courses/admin-3.jpg')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/courses/admin-3.jpg')}}" alt="Image"></noscript>
                                                 <p>With <a href="courses-details.html">Morgen Matthias</a></p>
                                             </div>
                                             <a href="courses-details.html"><h3>Analyzing Data With MS Excel & Excel</h3></a>
@@ -480,11 +475,11 @@ window.__mirage2 = {petok:"f39SqE2jkA23U9ZXbA8xTWPSbFiPoE3fMF98untLC_o-1800-0.0.
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single-courses-card style4">
                                         <div class="courses-img">
-                                            <a href="courses-details.html"><img alt="Image" data-cfsrc="assets/images/courses/courses-3.jpg" style="display:none;visibility:hidden;"><noscript><img src="assets/images/courses/courses-3.jpg" alt="Image"></noscript></a>
+                                            <a href="courses-details.html"><img alt="Image" data-cfsrc="{{ url_for('static', filename='images/courses/courses-3.jpg')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/courses/courses-3.jpg')}}" alt="Image"></noscript></a>
                                         </div>
                                         <div class="courses-content">
                                             <div class="admin-profile">
-                                                <img alt="Image" data-cfsrc="assets/images/courses/admin-3.jpg" style="display:none;visibility:hidden;"><noscript><img src="assets/images/courses/admin-3.jpg" alt="Image"></noscript>
+                                                <img alt="Image" data-cfsrc="{{ url_for('static', filename='images/courses/admin-3.jpg')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/courses/admin-3.jpg')}}" alt="Image"></noscript>
                                                 <p>With <a href="courses-details.html">Morgen Matthias</a></p>
                                             </div>
                                             <a href="courses-details.html"><h3>UI/UX Design Pattern For Succesfull Software</h3></a>
@@ -505,11 +500,11 @@ window.__mirage2 = {petok:"f39SqE2jkA23U9ZXbA8xTWPSbFiPoE3fMF98untLC_o-1800-0.0.
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single-courses-card style4">
                                         <div class="courses-img">
-                                            <a href="courses-details.html"><img alt="Image" data-cfsrc="assets/images/courses/courses-3.jpg" style="display:none;visibility:hidden;"><noscript><img src="assets/images/courses/courses-3.jpg" alt="Image"></noscript></a>
+                                            <a href="courses-details.html"><img alt="Image" data-cfsrc="{{ url_for('static', filename='images/courses/courses-3.jpg')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/courses/courses-3.jpg')}}" alt="Image"></noscript></a>
                                         </div>
                                         <div class="courses-content">
                                             <div class="admin-profile">
-                                                <img alt="Image" data-cfsrc="assets/images/courses/admin-3.jpg" style="display:none;visibility:hidden;"><noscript><img src="assets/images/courses/admin-3.jpg" alt="Image"></noscript>
+                                                <img alt="Image" data-cfsrc="{{ url_for('static', filename='images/courses/admin-3.jpg')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/courses/admin-3.jpg')}}" alt="Image"></noscript>
                                                 <p>With <a href="courses-details.html">Morgen Matthias</a></p>
                                             </div>
                                             <a href="courses-details.html"><h3>Basic Knowledge About Hodiernal Bharat In History</h3></a>
@@ -530,11 +525,11 @@ window.__mirage2 = {petok:"f39SqE2jkA23U9ZXbA8xTWPSbFiPoE3fMF98untLC_o-1800-0.0.
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single-courses-card style4">
                                         <div class="courses-img">
-                                            <a href="courses-details.html"><img alt="Image" data-cfsrc="assets/images/courses/courses-3.jpg" style="display:none;visibility:hidden;"><noscript><img src="assets/images/courses/courses-3.jpg" alt="Image"></noscript></a>
+                                            <a href="courses-details.html"><img alt="Image" data-cfsrc="{{ url_for('static', filename='images/courses/courses-3.jpg')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/courses/courses-3.jpg')}}" alt="Image"></noscript></a>
                                         </div>
                                         <div class="courses-content">
                                             <div class="admin-profile">
-                                                <img alt="Image" data-cfsrc="assets/images/courses/admin-3.jpg" style="display:none;visibility:hidden;"><noscript><img src="assets/images/courses/admin-3.jpg" alt="Image"></noscript>
+                                                <img alt="Image" data-cfsrc="{{ url_for('static', filename='images/courses/admin-3.jpg')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/courses/admin-3.jpg')}}" alt="Image"></noscript>
                                                 <p>With <a href="courses-details.html">Morgen Matthias</a></p>
                                             </div>
                                             <a href="courses-details.html"><h3>The Complete Business Plan Course Includes 50 Templates</h3></a>
@@ -630,7 +625,7 @@ window.__mirage2 = {petok:"f39SqE2jkA23U9ZXbA8xTWPSbFiPoE3fMF98untLC_o-1800-0.0.
                 <div class="row">
                     <div class="col-lg-4 col-sm-6">
                         <div class="footer-logo-area">
-                            <a href="index.html"><img alt="Image" data-cfsrc="assets/images/white-logo.png" style="display:none;visibility:hidden;"><noscript><img src="assets/images/white-logo.png" alt="Image"></noscript></a>
+                            <a href="index.html"><img alt="Image" data-cfsrc="{{ url_for('static', filename='images/white-logo.png')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/white-logo.png')}}" alt="Image"></noscript></a>
                             <p>Sanu University was established by J.H Merthon in 1810 for the public benefit. Afterwards, it is recognized globally</p>
                             <div class="contact-list">
                                 <ul>
@@ -688,7 +683,7 @@ window.__mirage2 = {petok:"f39SqE2jkA23U9ZXbA8xTWPSbFiPoE3fMF98untLC_o-1800-0.0.
                     </div>
                 </div>
                 <div class="shape">
-                    <img alt="Image" data-cfsrc="assets/images/shape-1.png" style="display:none;visibility:hidden;"><noscript><img src="assets/images/shape-1.png" alt="Image"></noscript>
+                    <img alt="Image" data-cfsrc="{{ url_for('static', filename='images/shape-1.png')}}" style="display:none;visibility:hidden;"><noscript><img src="{{ url_for('static', filename='images/shape-1.png')}}" alt="Image"></noscript>
                 </div>
             </div>
         </div>
@@ -737,30 +732,30 @@ window.__mirage2 = {petok:"f39SqE2jkA23U9ZXbA8xTWPSbFiPoE3fMF98untLC_o-1800-0.0.
         <!-- End Go Top Area -->
         
         <!--=== Jquery Min js ===-->
-        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
+        <script data-cfasync="false" src="{{ url_for('static', filename='cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js')}}"></script><script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
         <!--=== Bootstrap bundle Min js ===-->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
         <!--=== MeanMenu js ===-->
-        <script src="assets/js/jquery.meanmenu.js"></script>
+        <script src="{{ url_for('static', filename='js/jquery.meanmenu.js')}}"></script>
         <!--=== Owl Carousel Min js ===-->
-        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
         <!--=== Owl Carousel Thumbs Min js ===-->
-        <script src="assets/js/carousel-thumbs.min.js"></script>
+        <script src="{{ url_for('static', filename='js/carousel-thumbs.min.js')}}"></script>
         <!--=== Magnific popup Min js ===-->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
         <!-- Aos js -->
-        <script src="assets/js/aos.js"></script>
+        <script src="{{ url_for('static', filename='js/aos.js')}}"></script>
         <!-- Odometer js -->    
-        <script src="assets/js/odometer.min.js"></script>
+        <script src="{{ url_for('static', filename='js/odometer.min.js')}}"></script>
         <!-- Appear js -->  
-        <script src="assets/js/appear.min.js"></script> 
+        <script src="{{ url_for('static', filename='js/appear.min.js')}}"></script> 
         <!-- Form Validator js -->    
-        <script src="assets/js/form-validator.min.js"></script>
+        <script src="{{ url_for('static', filename='js/form-validator.min.js')}}"></script>
         <!-- Contact Form Script js -->    
-        <script src="assets/js/contact-form-script.js"></script>
+        <script src="{{ url_for('static', filename='js/contact-form-script.js')}}"></script>
         <!--=== AjaxChimp js ===-->
-        <script src="assets/js/ajaxchimp.min.js"></script>
+        <script src="{{ url_for('static', filename='js/ajaxchimp.min.js')}}"></script>
         <!--=== Custom js ===-->
-        <script src="assets/js/custom.js"></script>
+        <script src="{{ url_for('static', filename='js/custom.js')}}"></script>
     </body>
 </html>
