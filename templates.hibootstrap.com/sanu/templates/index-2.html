@@ -50,131 +50,7 @@
     <!-- End Preloader Area -->
 
     <!-- Start Navbar Area -->
-    <div class="navbar-area nav-bg-2" style="height: 103px; line-height: 103px; padding-top: 0; padding-bottom: 0;">
-        <div class="mobile-responsive-nav">
-            <div class="container">
-                <div class="mobile-responsive-menu">
-                    <div class="logo">
-                        <a href="index-2.html">
-                            <img class="main-logo" alt="logo" src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}"
-                                style="width: 130px; height: auto;" />
-                            <noscript>
-                                <img src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}" class="main-logo" alt="logo"
-                                    style="width: 130px; height: auto;" />
-                            </noscript>
-                            <img class="white-logo" alt="logo" src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}"
-                                style="width: 130px; height: auto;" />
-                            <noscript>
-                                <img src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}" class="white-logo" alt="logo"
-                                    style="width: 130px; height: auto;" />
-                            </noscript>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="desktop-nav">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-md navbar-light"
-                    style="height: 100px; line-height: 100px; margin-top: 0;">
-                    <a class="navbar-brand" href="index-2.html">
-                        <img class="main-logo" alt="logo" src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}"
-                            style="width: 130px; height: auto;" />
-                        <noscript>
-                            <img src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}" class="main-logo" alt="logo"
-                                style="width: 130px; height: auto;" />
-                        </noscript>
-                        <img class="white-logo" alt="logo" src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}"
-                            style="width: 130px; height: auto;" />
-                        <noscript>
-                            <img src="{{ url_for('static', filename='images/apleti-removebg-logo.png')}}" class="white-logo" alt="logo"
-                                style="width: 130px; height: auto;" />
-                        </noscript>
-                    </a>
-                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link active"> Home </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#about" class="nav-link"> About Us </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#" class="nav-link dropdown-toggle"> Courses </a>
-
-                                <ul class="dropdown-menu" style="width: 330px; max-height: 300px; overflow-y: auto;">
-                                    <li class="nav-item">
-                                        <a href="courses.html" class="nav-link" style="white-space: normal;">Professional and Effective Ushering Training</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" style="white-space: normal;">Church Administration and Leadership. </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" style="white-space: normal;">Corporate Governance, Board Development and
-                                            Orientation.
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" style="white-space: normal;">Value-Based and Results-Based Leadership for
-                                            changed Mindsets & better performance.
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" style="white-space: normal;">Training of Trainers & Facilitators for advancement
-                                            of transformed mindsets.
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" style="white-space: normal;">Developing and Maintaining a Personal Brand, and
-                                            Emotional Intelligence</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" style="white-space: normal;">Climate Change, Environmental Conservation &
-                                            sustainable Livelihood Improvements.
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" style="white-space: normal;">Creation, Growth, Management and Sustainability of
-                                            Personal Businesses.
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" style="white-space: normal;">Business Plan & Strategy Development for Growth &
-                                            Development.
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" style="white-space: normal;">Artificial Intelligence (AI) for Empowering Teens &
-                                            Youth Globally.
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Others...</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-
-        <div class="others-option-for-responsive">
-            <div class="container">
-                <div class="dot-menu">
-                    <div class="inner">
-                        <div class="icon">
-                            <i class="ri-menu-3-fill" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include 'components/navbar.html' %}
     <!--Start Banner Area-->
     <div class="banner-area">
         <div class="hero-slider2 owl-carousel owl-theme">
@@ -235,7 +111,8 @@
                     data-aos-once="true">
                     <div class="campus-image pl-20">
                         <img data-cfsrc="{{ url_for('static', filename='images/campus-information/campus-1.jpg')}}"><img
-                            style="width: 90%; border-radius: 10px;" src="{{ url_for('static', filename='images/campus-information/campus-1.jpg')}}"
+                            style="width: 90%; border-radius: 10px;"
+                            src="{{ url_for('static', filename='images/campus-information/campus-1.jpg')}}"
                             alt="Image"></noscript>
                     </div>
                 </div>
@@ -247,7 +124,8 @@
                 <div class="col-lg-6">
                     <div class="image-section" data-aos="fade-up" data-aos-easing="ease-in-sine"
                         data-aos-duration="1300" data-aos-once="true">
-                        <img src="{{ url_for('static', filename='images/about-us.jpg')}}" alt="Image" style="width: 90%; height: 480px;">
+                        <img src="{{ url_for('static', filename='images/about-us.jpg')}}" alt="Image"
+                            style="width: 90%; height: 480px;">
                     </div>
                 </div>
                 <!-- Content Section -->
@@ -303,7 +181,7 @@
     <div class="courses-area pt-90 bg-f4f6f9">
         <div class="container">
             <div class="section-title text-center" data-aos="fade-left" data-aos-easing="ease-in-sine"
-            data-aos-duration="1300" data-aos-once="true">
+                data-aos-duration="1300" data-aos-once="true">
                 <h2>Our Values</h2>
                 <p>Our values guide us to act with integrity, foster innovation, and build trust, creating a positive
                     impact on those we serve and our community.</p>
@@ -312,64 +190,69 @@
                 <div class="col-lg-10">
                     <div class="row">
                         <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-easing="ease-in-sine"
-                        data-aos-duration="1300" data-aos-once="true">
+                            data-aos-duration="1300" data-aos-once="true">
                             <div class="content-item d-flex align-items-start">
                                 <div class="icon-wrapper me-3">
                                     <i class="ri-briefcase-line"></i>
                                 </div>
                                 <div class="text-wrapper">
                                     <h4>Professionalism</h4>
-                                    <p>APLETI strives to bring up high-impact professional leaders who are results-oriented.</p>
+                                    <p>APLETI strives to bring up high-impact professional leaders who are
+                                        results-oriented.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-easing="ease-in-sine"
-                        data-aos-duration="1300" data-aos-once="true">
+                            data-aos-duration="1300" data-aos-once="true">
                             <div class="content-item d-flex align-items-start">
                                 <div class="icon-wrapper me-3">
                                     <i class="ri-tree-line"></i>
                                 </div>
                                 <div class="text-wrapper">
                                     <h4>Integrity</h4>
-                                    <p>APLETI envisions producing world leaders with high levels of integrity and ethics.</p>
+                                    <p>APLETI envisions producing world leaders with high levels of integrity and
+                                        ethics.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-easing="ease-in-sine"
-                        data-aos-duration="1300" data-aos-once="true">
+                            data-aos-duration="1300" data-aos-once="true">
                             <div class="content-item d-flex align-items-start">
                                 <div class="icon-wrapper me-3">
                                     <i class="ri-team-line"></i>
                                 </div>
                                 <div class="text-wrapper">
                                     <h4>Teamwork</h4>
-                                    <p>APLETI respects the collaborative style of leadership that exemplifies teamwork at all
+                                    <p>APLETI respects the collaborative style of leadership that exemplifies teamwork
+                                        at all
                                         levels of organizational leadership and management.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-easing="ease-in-sine"
-                        data-aos-duration="1300" data-aos-once="true">
+                            data-aos-duration="1300" data-aos-once="true">
                             <div class="content-item d-flex align-items-start">
                                 <div class="icon-wrapper me-3">
                                     <i class="ri-shake-hands-line"></i>
                                 </div>
                                 <div class="text-wrapper">
                                     <h4>Partnership</h4>
-                                    <p>APLETI embraces partnerships with like-minded institutions and organizations at local,
+                                    <p>APLETI embraces partnerships with like-minded institutions and organizations at
+                                        local,
                                         national, regional, and global levels.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
-                        data-aos-duration="1300" data-aos-once="true">
+                            data-aos-duration="1300" data-aos-once="true">
                             <div class="content-item d-flex align-items-start">
                                 <div class="icon-wrapper me-3">
                                     <i class="ri-service-line"></i>
                                 </div>
                                 <div class="text-wrapper">
                                     <h4>Respect for Humanity</h4>
-                                    <p>APLETI respects the sanctity of human life and the value of humanity as created by God in
+                                    <p>APLETI respects the sanctity of human life and the value of humanity as created
+                                        by God in
                                         his image.</p>
                                 </div>
                             </div>
@@ -378,90 +261,14 @@
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
     <!--End Values Area-->
 
     <!--Start Footer Area-->
-    <div class="footer-area pt-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="footer-logo-area">
-                        <p>
-                            African Prime Leadership Training Institute (APLETI) exists to develop and create impactful
-                            empowered professional leaders with changed mindsets, impacting their organizations and
-                            communities positively.
-                        </p>
-                        <div class="contact-list">
-                            <ul>
-                                <li><a href="tel:+01987655567685">+254 723456789 </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="footer-widjet">
-                        <h3>Mission</h3>
-                        <p style="color: #fff;">To Produce Empowered Leaders with Transformed Mindsets and Integrity for
-                            Global Service.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="footer-widjet">
-                        <h3>Vision</h3>
-                        <p style="color: #fff;">Mentoring The Next Generation of Empowered Leaders of Integrity Globally
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="footer-widjet">
-                        <h3>Goal</h3>
-                        <p style="color: #fff;">Creating an Empowered Generation of Responsible Leaders with Transformed
-                            Mindsets & Integrity, Providing Services Globally</p>
-                    </div>
-                </div>
-            </div>
-            <div class="shape">
-                <img alt="Image" data-cfsrc="{{ url_for('static', filename='images/shape-1.png')}}"
-                    style="display: none; visibility: hidden" /><noscript><img src="{{ url_for('static', filename='images/shape-1.png')}}"
-                        alt="Image" /></noscript>
-            </div>
-        </div>
-    </div>
+    {% include 'components/footer.html' %}
     <!--End Footer Area-->
 
     <!--Start Copyright Area-->
-    <div class="copyright-area">
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-lg-6 col-md-4">
-                        <div class="social-content">
-                            <ul>
-                                <li><span>Follow Us On</span></li>
-                                <li>
-                                    <a href="https://www.facebook.com/" target="_blank"><i
-                                            class="ri-facebook-fill"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com/" target="_blank"><i
-                                            class="ri-twitter-fill"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://instagram.com/?lang=en" target="_blank"><i
-                                            class="ri-instagram-line"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://linkedin.com/?lang=en" target="_blank"><i
-                                            class="ri-linkedin-fill"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!--End Copyright Area-->
 
     <!-- Start Go Top Area -->
@@ -472,7 +279,8 @@
     <!-- End Go Top Area -->
 
     <!--=== Jquery Min js ===-->
-    <script data-cfasync="false" src="{{ url_for('static', filename='cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js')}}"></script>
+    <script data-cfasync="false"
+        src="{{ url_for('static', filename='cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js')}}"></script>
     <script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
     <!--=== Bootstrap bundle Min js ===-->
     <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>

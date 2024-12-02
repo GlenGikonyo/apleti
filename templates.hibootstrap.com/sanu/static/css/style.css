@@ -2658,11 +2658,6 @@ Courses Style
   padding-right: 7px;
 }
 
-.description {
-  border-bottom: 1px solid #eeeeee;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-}
 .description .nav-tabs {
   font-size: 18px;
   margin-bottom: 30px;
@@ -3009,11 +3004,12 @@ Courses Style
   margin-bottom: 15px;
   border-bottom: 1px solid #e6e1e1;
 }
-.enroll-courses .list ul li span {
+.enroll-courses .list ul li a {
   position: absolute;
   left: 0;
   color: #111d5e;
   font-weight: 600;
+  cursor: pointer;
 }
 .enroll-courses .list ul li:last-child {
   padding-bottom: 0;
@@ -4745,8 +4741,8 @@ Page Banner Style
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .page-banner-area::before {
   position: absolute;
@@ -4758,10 +4754,10 @@ Page Banner Style
   background: rgba(17, 29, 94, 0.8);
 }
 .page-banner-area.bg-1 {
-  background-image: url(../images/page-banner/page-bnner-1.jpg);
+  background-image: url(../images/page-banner/books.jpg);
 }
 .page-banner-area.bg-2 {
-  background-image: url(../images/page-banner/page-bnner-2.jpg);
+  background-image: url(../images/page-banner/books.jpg);
 }
 .page-banner-area .container-fluid {
   max-width: 1520px;
