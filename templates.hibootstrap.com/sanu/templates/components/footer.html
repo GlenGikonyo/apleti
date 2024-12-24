@@ -1,82 +1,94 @@
-    <!--Start Footer Area-->
-    <div class="footer-area pt-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="footer-logo-area">
-                        <p>
-                            African Prime Leadership Training Institute (APLETI) exists to develop and create impactful
-                            empowered professional leaders with changed mindsets, impacting their organizations and
-                            communities positively.
-                        </p>
-                        <div class="contact-list">
-                            <ul>
-                                <li><a href="tel:+01987655567685">+254 723456789 </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="footer-widjet">
-                        <h3>Mission</h3>
-                        <p style="color: #fff;">To Produce Empowered Leaders with Transformed Mindsets and Integrity for
-                            Global Service.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="footer-widjet">
-                        <h3>Vision</h3>
-                        <p style="color: #fff;">Mentoring The Next Generation of Empowered Leaders of Integrity Globally
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="footer-widjet">
-                        <h3>Goal</h3>
-                        <p style="color: #fff;">Creating an Empowered Generation of Responsible Leaders with Transformed
-                            Mindsets & Integrity, Providing Services Globally</p>
+<!--Start Footer Area-->
+<div class="footer-area pt-50">
+    <div class="container">
+        <div class="row">
+            <!-- About/Logo Area - Widened to 4 columns -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="footer-logo-area">
+                    <p>
+                        African Prime Leadership Training Institute (APLETI) exists to develop and create impactful
+                        empowered professional leaders with changed mindsets, impacting their organizations and
+                        communities positively.
+                    </p>
+                    <div class="contact-list">
+                        <ul>
+                            <li><a href="tel:+254723456789">+254 723456789 </a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="shape">
-                <img alt="Image" data-cfsrc="{{ url_for('static', filename='images/shape-1.png')}}"
-                    style="display: none; visibility: hidden" /><noscript><img
-                        src="{{ url_for('static', filename='images/shape-1.png')}}" alt="Image" /></noscript>
-            </div>
-        </div>
-    </div>
-    <!--End Footer Area-->
 
-    <!--Start Copyright Area-->
-    <div class="copyright-area">
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-lg-6 col-md-4">
-                        <div class="social-content">
-                            <ul>
-                                <li><span>Follow Us On</span></li>
-                                <li>
-                                    <a href="https://www.facebook.com/" target="_blank"><i
-                                            class="ri-facebook-fill"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com/" target="_blank"><i
-                                            class="ri-twitter-fill"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://instagram.com/?lang=en" target="_blank"><i
-                                            class="ri-instagram-line"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://linkedin.com/?lang=en" target="_blank"><i
-                                            class="ri-linkedin-fill"></i></a>
-                                </li>
-                            </ul>
-                        </div>
+            <!-- Mission - Kept as 3 columns -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="footer-widjet">
+                    <h3>Mission</h3>
+                    <p style="color: #fff;">To Produce Empowered Leaders with Transformed Mindsets and Integrity for
+                        Global Service.</p>
+                </div>
+            </div>
+
+            <!-- Vision - Kept as 3 columns -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="footer-widjet">
+                    <h3>Vision</h3>
+                    <p style="color: #fff;">Mentoring The Next Generation of Empowered Leaders of Integrity Globally
+                    </p>
+                </div>
+            </div>
+
+            <!-- Map Section - Using remaining 2 columns -->
+            <div class="col-lg-2 col-sm-6">
+                <div class="footer-widjet">
+                    <h3>Find Us</h3>
+                    <div class="map-container" style="width: 100%; height: 200px; border-radius: 8px; overflow: hidden;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.82990404165!2d36.708146638933336!3d-1.2192750686283145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f18a0942e4a75%3A0xc53411018d1f8fe4!2sWangige%20Market!5e0!3m2!1sen!2ske!4v1735045140661!5m2!1sen!2ske"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shape element -->
+        <div class="shape">
+            <img alt="Shape Image" src="{{ url_for('static', filename='images/shape-1.png')}}" />
+        </div>
+    </div>
+</div>
+<!--End Footer Area-->
+
+<!-- Social Media Section -->
+<!-- <div class="copyright-area">
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-lg-6 col-md-4">
+                    <div class="social-content">
+                        <ul>
+                            <li><span>Follow Us On</span></li>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/?lang=en" target="_blank"><i class="ri-instagram-line"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--End Copyright Area-->
+</div> -->
+<!--End Copyright Area-->
