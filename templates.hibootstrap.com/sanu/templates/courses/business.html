@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Bootstrap Css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+        <!--=== MeanMenu CSS ===-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.css')}}">
+        <!--Owl carousel-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
+        <!--Owl Theme-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css')}}">
+        <!--=== Magnific Popup Min CSS ===-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.min.css')}}">
+        <!--Flaticon-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css')}}">
+        <!--Remixicon-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/remixicon.css')}}">
+        <!--Odometer-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/odometer.min.css')}}">
+        <!--Aos css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css')}}">
+        <!--Style css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+        <!--Dark css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/dark.css')}}">
+        <!--Responsive css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
+
+        <!--=== Title ===-->
+        <title>APLETI</title>
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon-32x32.png')}}">
+    </head>
+    <body>
+        <!-- Start Preloader Area -->
+        <div class="preloader-area">
+            <div class="spinner">
+                <div class="inner">
+                    <div class="disc"></div>
+                    <div class="disc"></div>
+                    <div class="disc"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader Area -->
+        <!-- Start Navbar Area --> 
+        {% include 'components/navbar.html' %}
+        <!-- End Navbar Area -->
+        <!--Start Page Banner-->
+        <div class="page-banner-area bg-2">
+            <div class="container">
+                <div class="page-banner-content">
+                    <h1>Courses Details</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Courses Details</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--End -->
+        
+
+
+
+
+
+
+         <!--Start Footer Area-->
+         {% include 'components/footer.html' %}
+         <!--End Footer Area-->
+ 
+         <!--Start Copyright Area-->
+         <!--End Copyright Area-->
+ 
+         <!-- Start Go Top Area -->
+         <div class="go-top">
+             <i class="ri-arrow-up-s-line"></i>
+             <i class="ri-arrow-up-s-line"></i>
+         </div>
+         <!-- End Go Top Area -->
+         
+         <!--=== Jquery Min js ===-->
+         <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+         <!--=== Bootstrap bundle Min js ===-->
+         <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+         <!--=== MeanMenu js ===-->
+         <script src="{{ url_for('static', filename='js/jquery.meanmenu.js')}}"></script>
+         <!--=== Owl Carousel Min js ===-->
+         <script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+         <!--=== Owl Carousel Thumbs Min js ===-->
+         <script src="{{ url_for('static', filename='js/carousel-thumbs.min.js')}}"></script>
+         <!--=== Magnific popup Min js ===-->
+         <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+         <!-- Aos js -->
+         <script src="{{ url_for('static', filename='js/aos.js')}}"></script>
+         <!-- Odometer js -->    
+         <script src="{{ url_for('static', filename='js/odometer.min.js')}}"></script>
+         <!-- Appear js -->  
+         <script src="{{ url_for('static', filename='js/appear.min.js')}}"></script> 
+         <!-- Form Validator js -->    
+         <script src="{{ url_for('static', filename='js/form-validator.min.js')}}"></script>
+         <!-- Contact Form Script js -->    
+         <script src="{{ url_for('static', filename='js/contact-form-script.js')}}"></script>
+         <!--=== AjaxChimp js ===-->
+         <script src="{{ url_for('static', filename='js/ajaxchimp.min.js')}}"></script>
+         <!--=== Custom js ===-->
+         <script src="{{ url_for('static', filename='js/custom.js')}}"></script>
+     </body>
+ </html>
+        
