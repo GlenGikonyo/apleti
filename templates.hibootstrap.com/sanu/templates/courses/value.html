@@ -1,114 +1,160 @@
 <!DOCTYPE html>
 <html lang="zxx">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--Bootstrap Css-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
-        <!--=== MeanMenu CSS ===-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.css')}}">
-        <!--Owl carousel-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
-        <!--Owl Theme-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css')}}">
-        <!--=== Magnific Popup Min CSS ===-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.min.css')}}">
-        <!--Flaticon-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css')}}">
-        <!--Remixicon-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/remixicon.css')}}">
-        <!--Odometer-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/odometer.min.css')}}">
-        <!--Aos css-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css')}}">
-        <!--Style css-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
-        <!--Dark css-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/dark.css')}}">
-        <!--Responsive css-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=== Title ===-->
-        <title>APLETI</title>
-        <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon-32x32.png')}}">
-    </head>
-    <body>
-        <!-- Start Preloader Area -->
-        <div class="preloader-area">
-            <div class="spinner">
-                <div class="inner">
-                    <div class="disc"></div>
-                    <div class="disc"></div>
-                    <div class="disc"></div>
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+    <!--=== MeanMenu CSS ===-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.css')}}">
+    <!--Owl carousel-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
+    <!--Owl Theme-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css')}}">
+    <!--=== Magnific Popup Min CSS ===-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.min.css')}}">
+    <!--Flaticon-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css')}}">
+    <!--Remixicon-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/remixicon.css')}}">
+    <!--Odometer-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/odometer.min.css')}}">
+    <!--Aos css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css')}}">
+    <!--Style css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <!--Dark css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dark.css')}}">
+    <!--Responsive css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
+
+    <!--=== Title ===-->
+    <title>APLETI</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon-32x32.png')}}">
+</head>
+
+<body>
+    <!-- Start Preloader Area -->
+    <div class="preloader-area">
+        <div class="spinner">
+            <div class="inner">
+                <div class="disc"></div>
+                <div class="disc"></div>
+                <div class="disc"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader Area -->
+    <!-- Start Navbar Area -->
+    {% include 'components/navbar.html' %}
+    <!-- End Navbar Area -->
+    <!--Start Page Banner-->
+    <div class="page-banner-area bg-2">
+        <div class="container">
+            <div class="page-banner-content">
+                <h1>Courses Details</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Courses Details</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--End Page Banner-->
+
+    <!--Start Courses Details Area-->
+    <div class="courses-details-area pt-500">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="courses-details">
+                        <div class="courses-card">
+                            <h2>Value-Based and Results-Based Leadership for changed Mindsets & better performance </h2>
+                            <hr>
+                            <div class="img">
+                                <img alt="Image"
+                                    data-cfsrc="{{ url_for('static', filename='images/courses/courses-4.jpg')}}"
+                                    style="display:none;visibility:hidden;"><noscript><img
+                                        src="{{ url_for('static', filename='images/courses/courses-4.jpg')}}"
+                                        alt="Image"></noscript>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <div class="container p-0">
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-overview" role="tabpanel"
+                                        aria-labelledby="nav-overview-tab">
+                                        <div class="overview">
+                                            <div class="learn">
+                                                <h3>Objective of the course</h3>
+                                                <p style="position: relative; padding-left: 20px;">
+                                                    <span
+                                                        style="position: absolute; left: 0; top: 6px; width: 8px; height: 8px; background-color: red; border-radius: 50%;"></span>
+                                                    The course aims to enable participants to: Understand and apply the
+                                                    principles and skills of value-based and results-based leadership,
+                                                    strategic planning and management for changed mindsets and better
+                                                    performance, as well as be able to practice professional leadership
+                                                    values in their personal and organizational working environments in
+                                                    anticipation of better results.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- End Preloader Area -->
-        <!-- Start Navbar Area --> 
-        {% include 'components/navbar.html' %}
-        <!-- End Navbar Area -->
-        <!--Start Page Banner-->
-        <div class="page-banner-area bg-2">
-            <div class="container">
-                <div class="page-banner-content">
-                    <h1>Courses Details</h1>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li>Courses Details</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--End -->
-        
+    </div>
+    <!--End Courses Details Area-->
 
 
+    <!--Start Footer Area-->
+    {% include 'components/footer.html' %}
+    <!--End Footer Area-->
 
+    <!--Start Copyright Area-->
+    <!--End Copyright Area-->
 
+    <!-- Start Go Top Area -->
+    <div class="go-top">
+        <i class="ri-arrow-up-s-line"></i>
+        <i class="ri-arrow-up-s-line"></i>
+    </div>
+    <!-- End Go Top Area -->
 
+    <!--=== Jquery Min js ===-->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+    <!--=== Bootstrap bundle Min js ===-->
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+    <!--=== MeanMenu js ===-->
+    <script src="{{ url_for('static', filename='js/jquery.meanmenu.js')}}"></script>
+    <!--=== Owl Carousel Min js ===-->
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+    <!--=== Owl Carousel Thumbs Min js ===-->
+    <script src="{{ url_for('static', filename='js/carousel-thumbs.min.js')}}"></script>
+    <!--=== Magnific popup Min js ===-->
+    <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+    <!-- Aos js -->
+    <script src="{{ url_for('static', filename='js/aos.js')}}"></script>
+    <!-- Odometer js -->
+    <script src="{{ url_for('static', filename='js/odometer.min.js')}}"></script>
+    <!-- Appear js -->
+    <script src="{{ url_for('static', filename='js/appear.min.js')}}"></script>
+    <!-- Form Validator js -->
+    <script src="{{ url_for('static', filename='js/form-validator.min.js')}}"></script>
+    <!-- Contact Form Script js -->
+    <script src="{{ url_for('static', filename='js/contact-form-script.js')}}"></script>
+    <!--=== AjaxChimp js ===-->
+    <script src="{{ url_for('static', filename='js/ajaxchimp.min.js')}}"></script>
+    <!--=== Custom js ===-->
+    <script src="{{ url_for('static', filename='js/custom.js')}}"></script>
+</body>
 
-         <!--Start Footer Area-->
-         {% include 'components/footer.html' %}
-         <!--End Footer Area-->
- 
-         <!--Start Copyright Area-->
-         <!--End Copyright Area-->
- 
-         <!-- Start Go Top Area -->
-         <div class="go-top">
-             <i class="ri-arrow-up-s-line"></i>
-             <i class="ri-arrow-up-s-line"></i>
-         </div>
-         <!-- End Go Top Area -->
-         
-         <!--=== Jquery Min js ===-->
-         <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
-         <!--=== Bootstrap bundle Min js ===-->
-         <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
-         <!--=== MeanMenu js ===-->
-         <script src="{{ url_for('static', filename='js/jquery.meanmenu.js')}}"></script>
-         <!--=== Owl Carousel Min js ===-->
-         <script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
-         <!--=== Owl Carousel Thumbs Min js ===-->
-         <script src="{{ url_for('static', filename='js/carousel-thumbs.min.js')}}"></script>
-         <!--=== Magnific popup Min js ===-->
-         <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
-         <!-- Aos js -->
-         <script src="{{ url_for('static', filename='js/aos.js')}}"></script>
-         <!-- Odometer js -->    
-         <script src="{{ url_for('static', filename='js/odometer.min.js')}}"></script>
-         <!-- Appear js -->  
-         <script src="{{ url_for('static', filename='js/appear.min.js')}}"></script> 
-         <!-- Form Validator js -->    
-         <script src="{{ url_for('static', filename='js/form-validator.min.js')}}"></script>
-         <!-- Contact Form Script js -->    
-         <script src="{{ url_for('static', filename='js/contact-form-script.js')}}"></script>
-         <!--=== AjaxChimp js ===-->
-         <script src="{{ url_for('static', filename='js/ajaxchimp.min.js')}}"></script>
-         <!--=== Custom js ===-->
-         <script src="{{ url_for('static', filename='js/custom.js')}}"></script>
-     </body>
- </html>
-        
+</html>

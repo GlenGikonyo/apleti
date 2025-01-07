@@ -105,9 +105,9 @@ def ushering():
     return render_template('courses/ushering.html')
 
 
-@app.route('/church')
-def church():
-    return render_template('courses/church.html')
+@app.route('/leadership')
+def leadership():
+    return render_template('courses/leadership.html')
 
 
 @app.route('/corporate')
@@ -119,40 +119,49 @@ def corporate():
 def value():
     return render_template('courses/value.html')
 
-@app.route('/trainer')
-def trainer():
-    return render_template('courses/trainer.html')
+@app.route('/customer')
+def customer():
+    return render_template('courses/customer.html')
 
-@app.route('/branding')
-def branding():
-    return render_template('courses/branding.html')
+@app.route('/transformational')
+def transformational():
+    return render_template('courses/transformational.html')
 
-@app.route('/climate')
-def climate():
-    return render_template('courses/climate.html')
-
-
-@app.route('/strategy')
-def strategy():
-    return render_template('courses/strategy.html')
+@app.route('/new')
+def new():
+    return render_template('courses/new.html')
 
 
-@app.route('/ai')
-def ai():
-    return render_template('courses/ai.html')
+@app.route('/adaptive')
+def adaptive():
+    return render_template('courses/adaptive.html')
 
-@app.route('/personal')
-def personal():
-    return render_template('courses/personal.html')
 
+@app.route('/quality')
+def quality():
+    return render_template('courses/quality.html')
+
+@app.route('/financial')
+def financial():
+    return render_template('courses/financial.html')
+
+@app.route('/proposal')
+def proposal():
+    return render_template('courses/proposal.html')
+
+@app.route('/business')
+def business():
+    return render_template('courses/business.html')
+
+@app.route('/women')
+def women():
+    return render_template('courses/women.html')
 
 @app.route('/others')
 def others():
     return render_template('courses/others.html')
 
- 
-
 if __name__ == "__main__":
     # Run Flask app using Waitress server
     # serve(app, host="0.0.0.0", port=8080)
-     app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(debug=True, host="0.0.0.0", port=5000)
