@@ -1169,6 +1169,91 @@ Others Option For Responsive Area Style
   display: none;
 }
 
+/* Mobile navbar container */
+.mobile-responsive-nav {
+  position: relative;
+  display: none;
+}
+
+/* Mobile menu container */
+.mobile-responsive-nav .container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Logo container */
+.mobile-responsive-nav .mobile-responsive-menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.mobile-responsive-nav .logo {
+  position: relative;
+  z-index: 1;
+}
+
+.mobile-responsive-nav .logo img {
+  max-width: 130px;
+  height: auto;
+}
+
+/* Hamburger menu button */
+.navbar-toggler {
+  position: relative;
+  z-index: 2;
+  padding: 8px;
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Media queries */
+@media screen and (max-width: 991px) {
+  .navbar-area {
+    padding: 0;
+  }
+
+  .mobile-responsive-nav {
+    display: block;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-responsive-menu {
+    position: relative;
+  }
+}
+
+/* Ensure proper spacing on medium screens */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .mobile-responsive-nav .container {
+    max-width: 720px;
+  }
+}
+
+/* Adjust for small screens */
+@media screen and (max-width: 767px) {
+  .mobile-responsive-nav .container {
+    max-width: 540px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .mobile-responsive-nav .logo {
+    max-width: 110px;
+  }
+}
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -1589,7 +1674,6 @@ Banner Style
   background-position: center;
   height: 86vh;
 }
-
 
 .slider-content {
   max-width: 740px;
