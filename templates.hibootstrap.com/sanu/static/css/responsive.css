@@ -2698,6 +2698,7 @@
   .mobile-responsive-nav .mobile-responsive-menu.mean-container .mean-nav {
     margin-top: 54px;
     background-color: #ffffff;
+    line-height: 30px;
   }
   .mobile-responsive-nav .mobile-responsive-menu.mean-container .mean-nav ul {
     border: none !important;
@@ -2771,6 +2772,7 @@
     position: absolute;
     z-index: 2;
     padding: 0;
+    top: 55.312px;
   }
   .mobile-responsive-nav .others-options {
     display: none !important;
