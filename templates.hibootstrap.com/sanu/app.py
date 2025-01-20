@@ -161,6 +161,10 @@ def women():
 def others():
     return render_template('courses/others.html')
 
+@app.route('/admin')
+def admin():
+    return render_template('admin.html')
+
 if __name__ == "__main__":
     # Run Flask app using Waitress server
     # serve(app, host="0.0.0.0", port=8080)
