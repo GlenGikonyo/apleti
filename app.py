@@ -1,14 +1,25 @@
 from flask import Flask, render_template,url_for,request,jsonify
-from waitress import serve
 from pymongo import MongoClient
 from datetime import datetime
 from bson import ObjectId
+import os
+from dotenv import load_dotenv
+from flask_talisman import Talisman
+
 
 
 app = Flask(__name__)
+load_dotenv() 
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+app.config['DEBUG'] = False
+
+
+# Content Security Policy
+
+
 
 # MongoDB connection string
-connection_string="mongodb+srv://admin2025:admin2025@cluster0.rqhbs.mongodb.net/apleti?retryWrites=true&w=majority&appName=Cluster0"
+connection_string = os.getenv("MONGODB_URI")
 client = MongoClient(connection_string)
 db = client['apleti']
 collection = db['ContactForm']
@@ -69,13 +80,14 @@ def render_contact_us():
             result = collection.insert_one(form_data)
            
             print(f"Data inserted with ID: {result.inserted_id}")
-            
 
+        
             # Provide success response
             return "Form submitted successfully!"  # Replace with a redirect or template if needed
 
         except Exception as e:
             print(f"Error inserting data: {e}")
+
             return "An error occurred while submitting the form. Please try again later."
 
     # Render the HTML form for GET requests
@@ -238,7 +250,5 @@ def delete_message():
 
 
 
-if __name__ == "__main__":
-    # Run Flask app using Waitress server
-    # serve(app, host="0.0.0.0", port=8080)
-    app.run(debug=True, host="0.0.0.0", port=5000)
+if __name__ == "__main__":    
+    app.run(debug=False, host="0.0.0.0", port=5000)
