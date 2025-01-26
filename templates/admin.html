@@ -56,6 +56,12 @@
         .search-bar {
             max-width: 300px;
         }
+        .logout-link {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: calc(100% - 40px);
+        }
     </style>
 </head>
 
@@ -72,6 +78,9 @@
         <nav class="nav flex-column">
             <a class="nav-link active" href="#">
                 <i class="fas fa-inbox"></i> Inbox
+            </a>
+            <a class="nav-link logout-link text-danger" href="{{ url_for('logout') }}">
+                <i class="fas fa-sign-out-alt"></i> Logout
             </a>
         </nav>
     </div>

@@ -253,7 +253,6 @@ def login():
         })
 
         if user:
-           
             if user['password'] == password:  
                 session['admin'] = user['admin']  # Create a session for the admin
                 flash('Login successful!', 'success')
