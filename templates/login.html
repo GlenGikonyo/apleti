@@ -47,7 +47,7 @@
         </div> -->
         <!-- End Preloader Area -->
 
-        {% include 'components/navbar.html' %}
+        <!-- {% include 'components/navbar.html' %} -->
 
         <!-- Sidebar Modal -->
         <div class="sidebarModal modal right fade" id="sidebarModal" tabindex="-1" role="dialog">
@@ -155,18 +155,30 @@
         <!--End Page Banner-->
 
         <!--Start Login Area-->
-        <div class="login-area pt-100 pb-70">
+        <div class="login-area">
             <div class="container">
                 <div class="login">
                     <h3>Login</h3>
-                    <form>
+                    <form action="{{ url_for('login') }}" method="POST">
                         <div class="form-group">
-                            <input type="email" id="email" class="form-control" placeholder="Username Or Email Address*">
+                            <input 
+                                type="text" 
+                                name="email" 
+                                id="email" 
+                                class="form-control" 
+                                placeholder="Username or Email Address*" 
+                                required>
                         </div>
                         <div class="form-group">
-                            <input type="password" id="password" class="form-control" placeholder="Password*">
+                            <input 
+                                type="password" 
+                                name="password" 
+                                id="password" 
+                                class="form-control" 
+                                placeholder="Password*" 
+                                required>
                         </div>
-                        <button type="submit" class="default-btn btn active">Login</button>
+                        <button type="submit" class="default-btn">Login</button>
                     </form>
                 </div>
             </div>

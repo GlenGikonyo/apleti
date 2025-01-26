@@ -1,10 +1,11 @@
-from flask import Flask, render_template,url_for,request,jsonify
+from flask import Flask, render_template,url_for,request,jsonify,flash,redirect,session 
 from pymongo import MongoClient
 from datetime import datetime
 from bson import ObjectId
 import os
 from dotenv import load_dotenv
 from flask_talisman import Talisman
+from datetime import timedelta
 
 
 
@@ -14,8 +15,8 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 app.config['DEBUG'] = False
 
 
-# Content Security Policy
-
+app.secret_key = os.getenv('SECRET_KEY')
+app.permanent_session_lifetime = timedelta(minutes=30)  # Session timeout
 
 
 # MongoDB connection string
@@ -23,6 +24,9 @@ connection_string = os.getenv("MONGODB_URI")
 client = MongoClient(connection_string)
 db = client['apleti']
 collection = db['ContactForm']
+
+# Acces for Login collection access
+login_collection= db['login']
 
 
 
@@ -137,9 +141,7 @@ def render_index_2():
 def render_latest_news():
     return render_template('latest-news.html')
 
-@app.route('/login')
-def render_login():
-    return render_template('login.html')
+
 
 @app.route('/news-details')
 def render_news_details():
@@ -222,15 +224,45 @@ def women():
 def others():
     return render_template('courses/others.html')
 
+
 @app.route('/admin')
 def admin():
+    # Check if the admin session exists
+    if 'admin' not in session:
+        flash('You must be logged in to access this page.', 'danger')
+        return redirect(url_for('login'))
+
     # Retrieve data from MongoDB, sorted by the timestamp or creation date field in descending order
-    data = list(collection.find({}).sort("created_at", -1))  # Replace 'timestamp' with the actual field name
+    data = list(collection.find({}).sort("created_at", -1))  # Replace 'created_at' with the actual field name
     print(data)
     return render_template('admin.html', messages=data)
 
-app.route('/login')
+
+@app.route('/login', methods=['GET', 'POST'])
 def login():
+    if request.method == 'POST':
+        email_or_username = request.form.get('email')
+        password = request.form.get('password')
+        print("Data from login form:",email_or_username)
+        
+        print("Data from login form:",password)
+
+        # Check if user exists by email or username
+        user = login_collection.find_one({
+            "$or": [{"admin": email_or_username}, {"password": email_or_username}]
+        })
+
+        if user:
+           
+            if user['password'] == password:  
+                session['admin'] = user['admin']  # Create a session for the admin
+                flash('Login successful!', 'success')
+                return redirect(url_for('admin'))  
+            else:
+                flash('Invalid password. Please try again.', 'danger')
+        else:
+            flash('User not found. Please check your credentials.', 'danger')
+
     return render_template('login.html')
 
 @app.route('/delete_message', methods=['POST'])
@@ -250,6 +282,11 @@ def delete_message():
     else:
         return jsonify({'success': False, 'message': 'Message not found'}), 404
 
+@app.route('/logout')
+def logout():
+    session.pop('admin', None)  # Remove the admin session
+    flash('You have been logged out.', 'info')
+    return redirect(url_for('login'))
 
 
 
