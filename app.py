@@ -229,6 +229,10 @@ def admin():
     print(data)
     return render_template('admin.html', messages=data)
 
+app.route('/login')
+def login():
+    return render_template('login.html')
+
 @app.route('/delete_message', methods=['POST'])
 def delete_message():
     # Get the ID from the request body
@@ -251,4 +255,4 @@ def delete_message():
 
 
 if __name__ == "__main__":    
-    app.run(debug=False, host="0.0.0.0", port=5000)
+    app.run(debug=True, host="0.0.0.0", port=5000)

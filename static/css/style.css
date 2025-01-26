@@ -4816,7 +4816,7 @@ CopyRight Style
   transition: all ease 0.5s;
 }
 .copyright .social-content ul li a:hover {
-  color: #e32845;
+  color: #F4AC40;
 }
 
 /*
@@ -5078,8 +5078,8 @@ Contact Us Style
   height: 65px;
   width: 65px;
   line-height: 65px;
-  border: 1px solid #e32845;
-  color: #e32845;
+  border: 1px solid #f4ac40;
+  color: #f4ac40;
   text-align: center;
   border-radius: 100%;
   margin: auto;
@@ -5126,11 +5126,11 @@ Contact Us Style
   text-align: center;
   display: inline-block;
   background-color: #eeeeee;
-  color: #e32845;
+  color: #f4ac40;
   transition: all ease 0.5s;
 }
 .contact-and-address .social-media ul li a:hover {
-  background-color: #e32845;
+  background-color: #f4ac40;
   color: #ffffff;
   transform: translateY(-5px);
 }
