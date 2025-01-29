@@ -36,6 +36,31 @@
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon-32x32.png')}}" />
 </head>
 
+<style>
+    /* Add these styles to your style.css file */
+
+/* Prevent horizontal scrolling on the body */
+body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+/* Ensure sections don't overflow */
+section,
+.section,
+.area {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Fix for any absolute positioned elements */
+.preloader-area,
+.go-top {
+    max-width: 100vw;
+}
+</style>
+
 <body>
     <!-- Start Preloader Area -->
     <div class="preloader-area">
@@ -286,14 +311,128 @@
         </div>
     </div>
     <!--End Values Area-->
-    <!--Strategic Objectives-->
-    <!--Strategic Objectives-->
-    <!--Strategic Objectives-->
-    <!--End of Strategic Objectives-->
-    <!--End of Strategic Objectives-->
-    <!--End of Strategic Objectives-->
+    <!--Start Strategic Objectives and Outcomes Area-->
+    <div class="strategic-area pt-50 pb-30">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                data-aos-duration="1300" data-aos-once="true">
+                <h2>Strategic Objectives & Overall Outcomes</h2>
+                <p>Our strategic objectives and outcomes guide our mission to develop impactful leaders globally</p>
+            </div>
+
+            <div class="row">
+                <!-- Strategic Objectives Column -->
+                <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1300"
+                    data-aos-once="true">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4">Strategic Objectives</h3>
+                            <ol class="list-unstyled">
+                                <li class="mb-3">
+                                    <div class="d-flex">
+                                        <span class="me-2">1.</span>
+                                        <p class="mb-0">To provide professional technical human resources to support the
+                                            training programs and consultancy services.</p>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex">
+                                        <span class="me-2">2.</span>
+                                        <p class="mb-0">To create a team of reliable trainers to lead the facilitation
+                                            of high impact leadership empowerment programs and consultancy services.</p>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex">
+                                        <span class="me-2">3.</span>
+                                        <p class="mb-0">To develop programs and projects, various consultancy services
+                                            and relevant policies and procedures governing their implementation.</p>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex">
+                                        <span class="me-2">4.</span>
+                                        <p class="mb-0">To develop and source for strategic partnerships with
+                                            international organizations, government, non-governmental organizations,
+                                            churches, and like-minded institutions.</p>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex">
+                                        <span class="me-2">5.</span>
+                                        <p class="mb-0">To develop contextual entrepreneurial activities that helps the
+                                            Institute to maintain its competitive advantage in Africa and the Global
+                                            market.</p>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex">
+                                        <span class="me-2">6.</span>
+                                        <p class="mb-0">To develop grant attracting fundraising strategies to create
+                                            sustainable financial resources base to support training programs and
+                                            consultancy services.</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Overall Outcomes Column -->
+                <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1300"
+                    data-aos-once="true">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4">Overall Outcomes</h3>
+                            <ol class="list-unstyled">
+                                <li class="mb-3">
+                                    <div class="d-flex">
+                                        <span class="me-2">1.</span>
+                                        <p class="mb-0">Produce Ethical Leaders with integrity in the delivery of their
+                                            services to the community and the wider Society.</p>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex">
+                                        <span class="me-2">2.</span>
+                                        <p class="mb-0">Create a crop of high impact leaders whose abilities and
+                                            capacities have been enhanced to act as change agents in changing their
+                                            societies.</p>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex">
+                                        <span class="me-2">3.</span>
+                                        <p class="mb-0">Develop Leaders who will become coaches and mentors for the
+                                            future generation of leaders.</p>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex">
+                                        <span class="me-2">4.</span>
+                                        <p class="mb-0">Enhance international collaboration and partnerships that
+                                            results to mutual interdependence between local, national, and international
+                                            organizations.</p>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex">
+                                        <span class="me-2">5.</span>
+                                        <p class="mb-0">Offer professional programs and projects, various consultancy
+                                            services and relevant policies and procedures governing their
+                                            implementation.</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Strategic Objectives and Outcomes Area-->
     <!--Start Founder Area-->
-    <div class="founder-area pt-50 pb-50">
+    <div class="founder-area pt-50 pb-50 bg-f4f6f9">
         <div class="container">
             <!-- Header section -->
             <div class="section-title text-center mb-8" data-aos="fade-right" data-aos-easing="ease-in-sine"
