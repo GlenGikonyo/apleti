@@ -72,16 +72,20 @@
                 <div class="col-lg-12">
                     <div class="courses-details">
                         <div class="courses-card">
-                            <h2>New Man, New Woman, New Life – An Empower International Sponsored Program</h2>
+                            <h2 data-aos="fade-right" data-aos-duration="1000">New Man, New Woman, New Life – An Empower
+                                International Sponsored Program</h2>
                             <hr>
                             <div class="img">
-                                <img alt="Image"
+                                <img alt="Image" data-aos="fade-up" data-aos-duration="1200"
                                     data-cfsrc="{{ url_for('static', filename='images/courses/courses-4.jpg')}}"
-                                    style="display:none;visibility:hidden;"><noscript><img
-                                        src="{{ url_for('static', filename='images/courses/courses-4.jpg')}}"
-                                        alt="Image"></noscript>
+                                    style="display:none;visibility:hidden;">
+                                <noscript>
+                                    <img src="{{ url_for('static', filename='images/courses/courses-4.jpg')}}"
+                                        alt="Image">
+                                </noscript>
                             </div>
                         </div>
+                        
                         <div class="description">
                             <div class="container p-0">
                                 <div class="tab-content" id="nav-tabContent">
@@ -102,6 +106,16 @@
                                                     balance with each other, hence becoming the New Man or New Woman,
                                                     restored to New Life in Christ.
                                                 </p>
+                                                <!-- Change this section with the course banner image -->
+                                                <div class="course-banner-image">
+                                                    <h4 class="text-center mb-3" data-aos="fade-up"
+                                                        data-aos-duration="1000">Upcoming Course</h4>
+                                                    <img src="{{ url_for('static', filename='images/NewManNewWoman.jpg') }}"
+                                                        alt="New Man, New Woman, New Life Masterclass"
+                                                        class="img-fluid mt-2" data-aos="zoom-in" data-aos-delay="300"
+                                                        data-aos-duration="1200"
+                                                        style="width: 40%; max-width: 800px; margin: 0 auto; display: block;">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
