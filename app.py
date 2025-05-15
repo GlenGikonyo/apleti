@@ -7,17 +7,14 @@ from dotenv import load_dotenv
 from flask_talisman import Talisman
 from datetime import timedelta
 
-
-
 app = Flask(__name__)
+application = app
 load_dotenv() 
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 app.config['DEBUG'] = False
 
-
 app.secret_key = os.getenv('SECRET_KEY')
 app.permanent_session_lifetime = timedelta(minutes=30)  # Session timeout
-
 
 # MongoDB connection string
 connection_string = os.getenv("MONGODB_URI")
@@ -27,9 +24,6 @@ collection = db['ContactForm']
 
 # Acces for Login collection access
 login_collection= db['login']
-
-
-
 
 # Define routes for the listed HTML files
 @app.route('/404')

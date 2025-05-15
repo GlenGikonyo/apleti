@@ -7,3 +7,4 @@ sys.path.insert(0, project_home)
 
 # Import the Flask app
 from app import app as application
+
